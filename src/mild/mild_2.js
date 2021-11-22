@@ -7,7 +7,10 @@
  */
 export function identifyVariable(variable) {
    let object = {};
-   
+   object.type = typeof variable;
+   object.value = variable;
+   return object;
+
 }
 
 
@@ -25,7 +28,12 @@ export function identifyVariable(variable) {
 
  */
 export function identifyArray(array) {
-
+   let objectArray = [];
+   let count = 0;
+   array.forEach(element => {
+      objectArray[count] = identifyVariable(element);
+      count++;
+   });
 }
 
 /**

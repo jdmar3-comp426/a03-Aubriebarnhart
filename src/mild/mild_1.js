@@ -10,7 +10,7 @@
  */
 export function sumToString(a, b) {
     // has not been tested yet... unsure how to fix it other than this
-    return a + ' + ' + b + ' = ' (a + b);
+    return `${a} + ${b} = ${a + b}`
 }
 
 
