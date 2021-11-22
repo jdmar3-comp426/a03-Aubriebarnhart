@@ -9,7 +9,8 @@
  * see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
  */
 export function sumToString(a, b) {
-    return '${a} + ${b} = ${a + b}'
+    // has not been tested yet... unsure how to fix it other than this
+    return a + ' + ' + b + ' = ' (a + b);
 }
 
 
