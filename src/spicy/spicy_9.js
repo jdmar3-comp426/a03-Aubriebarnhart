@@ -17,7 +17,7 @@
 export const repeat = (fn, n, ...params) => {
     let returnArray = [];
     let iterator = 0;
-    while(iterator > n) {
+    while(iterator < n) {
         let answer = fn(...params);
         returnArray.push(answer);
         iterator++
