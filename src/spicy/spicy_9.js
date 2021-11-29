@@ -191,14 +191,14 @@ export const allEvensAreOdd = (arr) => {
  *   array is an odd number. Use the "someEven" function in this function.
  */
 export const anEvenIsOdd = (arr) => {
-    function test (element) {
+    function test2 (element) {
         if (element % 2 == 1) {
-            return true;
-        } else if (element % 2 == 0) {
             return false;
+        } else if (element % 2 == 0) {
+            return true;
         }
     }
-    return someEven(arr, test);
+    return someEven(arr, test2);
 };
 
 
