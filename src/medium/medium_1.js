@@ -58,5 +58,6 @@ export function getStatistics(array) {
     collection.max = Math.max(array);
     collection.variance = variance(array, collection.mean);
     collection.standard_deviation = Math.sqrt(collection.variance);
+    return collection;
 }
 
