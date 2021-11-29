@@ -49,6 +49,14 @@ export function getMedian(array) {
  }
  */
 export function getStatistics(array) {
-
+    let collection = {};
+    collection.length = array.length;
+    collection.sum = getSum(array);
+    collection.mean = getSum(array)/array.length;
+    collection.median = getMedian(array);
+    collection.min = Math.min(array);
+    collection.max = Math.max(array);
+    collection.variance = variance(array, collection.mean);
+    collection.standard_deviation = Math.sqrt(collection.variance);
 }
 
