@@ -48,9 +48,9 @@ export const repeatDemo = () => {
  *   product of num1 and num2.
  */
 export const multiplyBy = (num1) => {
-    export const internalFunction = (num2) => {
+    return function (num2) {
         return num1*num2;
-    }
+    }  
 };
 
 
@@ -59,7 +59,7 @@ export const multiplyBy = (num1) => {
  *   "tenTimes" that multiplies a number by 10.
  */
 export const tenTimes = () => {
-    multiplyBy(10);
+    return multiplyBy(10);
 };
 
 
